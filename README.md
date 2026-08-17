@@ -133,7 +133,7 @@ screenshots/test_login_with_self_healing_healed.png
 - GitHub
 
 ## Project Structure
-
+```
 self-healing-test-mesh/
 │
 ├── demo/
@@ -172,7 +172,7 @@ self-healing-test-mesh/
 ├── .env.example
 ├── .gitignore
 └── README.md
-
+```
 ## Getting Started
 
 ### 1. Clone the Repository
