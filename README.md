@@ -165,14 +165,29 @@ The framework also generates:
 
 reports/healing_report.html
 reports/healing_report.json
-📸 Execution Evidence
+## 📸 Self-Healing Execution
 
-The repository includes screenshots showing:
+### 1. Original Locator Failure
 
-Original locator failure
-Successful execution after locator healing
+The test initially fails because the original locator `#login-btn` is no longer available.
 
-The healing report records the original locator, healed locator, confidence score, and final test status.
+![Original Locator Failure](screenshots/test_login_with_self_healing_failed.png)
+
+### 2. Automatic Locator Healing
+
+The framework identifies the updated locator `#login-button` and retries the action successfully.
+
+![Self-Healing Execution](screenshots/test_login_with_self_healing_healed.png)
+
+### Healing Result
+
+| Property | Result |
+|---|---|
+| Original Locator | `#login-btn` |
+| Healed Locator | `#login-button` |
+| Confidence | 95% |
+| Healing Result | SUCCESS |
+| Final Status | PASSED (HEALED) |
 
 🎯 Purpose
 
